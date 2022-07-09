@@ -114,5 +114,9 @@ main{
     align-self: flex-end;
 }
 
+h2{
+    text-transform: capitalize;
+}
+
 
 
