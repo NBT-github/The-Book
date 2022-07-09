@@ -102,6 +102,9 @@ nav {
 
 .book-title {
     text-align: center;
+    color: white;
+    text-transform: capitalize;
+    font-size: 2rem
 }
 
 .description {
@@ -191,6 +194,7 @@ footer {
             'main main';
         grid-template-rows: 6% 45% 49%;
         grid-template-columns: 0;
+        padding-bottom: 6rem;
     }
 
     #cover-image {
