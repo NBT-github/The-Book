@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,7 +16,14 @@ a {
     color: black;
 }
 
+html {
+    height: 100%;
+}
+
+
 body {
+    background-color: #4065d0;
+    font-family: 'Edu SA Beginner', cursive;
     display: grid;
     grid-template-areas:
         'cover header'
@@ -22,6 +31,7 @@ body {
         'cover footer';
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 10vh 90vh;
+    min-height: 100%;
 }
 
 .cover-image {
@@ -31,7 +41,6 @@ body {
 
 main {
     grid-area: main;
-    background-color: #4065d0;
     padding-left: 1rem;
     border-right: #294084 solid 1rem;
     border-bottom: #294084 solid 1rem;
@@ -58,7 +67,7 @@ header {
     display: flex;
 }
 
-.contact-us{
+.contact-us {
     margin-left: 1rem;
 }
 
@@ -91,7 +100,7 @@ nav {
     width: 100%;
 }
 
-.book-title{
+.book-title {
     text-align: center;
 }
 
@@ -133,7 +142,8 @@ footer {
     .header-child {
         width: 27%;
     }
-    main{
+
+    main {
         font-size: 1.4rem;
     }
 }
@@ -143,7 +153,7 @@ footer {
         width: 30%;
     }
 
-    main{
+    main {
         font-size: 1.3rem;
     }
 }
@@ -153,11 +163,11 @@ footer {
         width: 33%;
     }
 
-    .book-title{
+    .book-title {
         margin-top: 2rem;
     }
 
-    .description{
+    .description {
         line-height: 2rem;
     }
 
@@ -168,30 +178,28 @@ footer {
         font-size: 1.5rem;
     }
 
-    main>*{
+    main>* {
         margin-bottom: 5vh;
     }
 
+
+    
     body {
         grid-template-areas:
             'header header'
             'cover cover'
             'main main';
-        border: 1rem solid #294084;
         grid-template-rows: 6% 45% 49%;
         grid-template-columns: 0;
-        height: 166vh;
-        border-top: none;
     }
 
-    #cover-image{
+    #cover-image {
         border: #294084 solid 1rem;
         height: 90%;
         width: 56%;
     }
 
-    .cover-image{
-        background-color: #4065d0;
+    .cover-image {
         border: none;
         display: flex;
         align-items: flex-end;
@@ -199,69 +207,97 @@ footer {
     }
 }
 
-@media(max-width: 1070px){
-    #cover-image{
+@media(max-width: 1070px) {
+    #cover-image {
         width: 60%;
     }
 
-    main{
+    main {
         font-size: 1.3rem;
     }
 }
 
-@media(max-width: 930px){
+@media(max-width: 930px) {
 
-    main{
+    main {
         font-size: 1.2rem;
         padding: 0;
     }
 }
 
-@media(max-width: 700px){
+@media(max-width: 700px) {
 
-    main{
+    main {
         font-size: 1.15rem;
         padding: 0rem;
     }
-    body{
+
+    body {
         grid-template-rows: 6% 38% 56%;
     }
 
-    
+
 }
 
-@media (max-width: 570px) {
-    body{
-        
-    }
-}
+@media(max-width: 675px) {
 
-/* @media(max-width: 675px){
-
-    main{
+    main {
         font-size: 1.1rem;
     }
 
-    .description{
+    .description {
         line-height: 1.8rem;
     }
 
-    
+
 }
 
-@media(max-width: 615px){
+@media (max-width: 570px) {
+    body {
+        grid-template-rows: 6% 34% 60%;
+    }
+}
 
-    main{
-        font-size: 1.1rem;
+@media (max-width: 490px) {
+    body {
+        grid-template-rows: 6% 28% 66%;
     }
 
-    body{
-        grid-template-rows: 6% 45% 49%  ;
+    .description {
+        line-height: 1.4rem;
     }
 
-    .description{
-        line-height: 1.5rem;
+    main {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 420px) {
+    body {
+        grid-template-rows: 6% 24% 70%;
+    }
+}
+
+@media (max-width: 355px) {
+    body {
+        grid-template-rows: 6% 21% 73%;
     }
 
-    
-} */
+    .description {
+        line-height: 1.2rem;
+    }
+}
+
+@media (max-height: 800px) {
+    main {
+        font-size: 0.8rem;
+    }
+
+    #cover-image{
+        width: 50%;
+    }
+
+    .description {
+        line-height: 1.4rem;
+    }
+}
