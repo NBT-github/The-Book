@@ -28,8 +28,8 @@ body {
 }
 
 .header-child {
-    height: 9vh;
-    width: 25%;
+    height: 5rem;
+    width: 15rem;
     display: flex;
 }
 
@@ -59,4 +59,56 @@ nav {
 #logo {
     height: 60px;
     width: 60px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.container {
+    margin-top: 10vh;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    line-height: 1.8rem;
+    text-align: center;
+}
+
+h1, p{
+    font-size: 1.5rem;
+}
+
+.end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .container{
+        height: 60%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 750px) {
+    .container{
+        height: 75%;
+        width: 75%;
+    }
+}
+
+@media (max-width: 500px) {
+    .container{
+        height: 75%;
+        width: 100%;
+    }
 }
