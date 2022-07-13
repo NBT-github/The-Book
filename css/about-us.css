@@ -25,6 +25,7 @@ header {
     height: 9vh;
     width: 14rem;
     display: flex;
+    font-size: 0.8rem;
 }
 
 .books {
@@ -84,4 +85,23 @@ main {
     height: 80%;
     width: 80%;
     padding-top: 4rem;
+}
+
+@media (max-width: 700px) {
+    main {
+        line-height: 1.4;
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 400px) {
+    main {
+        line-height: 1.2;
+        font-size: 1rem;
+    }
+
+    .wrapper {
+        padding-top: 0rem;
+        width: 95%;
+    }
 }

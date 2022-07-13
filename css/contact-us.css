@@ -25,6 +25,7 @@ header {
     height: 9vh;
     width: 13rem;
     display: flex;
+    font-size: 0.8rem;
 }
 
 .books {
