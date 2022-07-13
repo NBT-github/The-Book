@@ -17,7 +17,7 @@ html {
 
 
 body {
-    font-family: 'Edu SA Beginner', cursive;
+    /* font-family: 'Edu SA Beginner', cursive; */
     background-color: #4065d0;
     min-height: 100%;
     display: grid;
@@ -41,7 +41,7 @@ header {
 
 .header-child {
     height: 5rem;
-    width: 9rem;
+    width: 11rem;
     display: flex;
 }
 
