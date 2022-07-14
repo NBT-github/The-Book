@@ -58,7 +58,7 @@ header {
 
 .header-child {
     height: 9vh;
-    width: 11rem;
+    width: 10rem;
     display: flex;
 }
 
@@ -130,37 +130,7 @@ footer {
     background-color: #294084;
 }
 
-@media (max-width: 1550px) {
-    body {
-        grid-template-columns: 1.3fr 1fr;
-    }
-}
-
-@media (max-width: 1300px) {
-    .header-child {
-        width: 27%;
-    }
-
-    main {
-        font-size: 1.4rem;
-    }
-}
-
-@media (max-width: 1210px) {
-    .header-child {
-        width: 30%;
-    }
-
-    main {
-        font-size: 1.3rem;
-    }
-}
-
-@media (max-width: 1100px) {
-    .header-child {
-        width: 33%;
-    }
-
+@media (max-width: 1510px) {
     .book-title {
         margin-top: 2rem;
     }
