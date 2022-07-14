@@ -21,6 +21,14 @@ header {
     background-color: rgb(41, 64, 132);
 }
 
+.next {
+    color: #0ee8fc;
+}
+
+.big-thing{
+    color: #1b94c1;
+}
+
 .header-child {
     height: 9vh;
     width: 14rem;

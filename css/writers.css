@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+html {
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    align-items: center;
+    background-color: rgb(41, 64, 132);
+}
+
+.next {
+    color: #0ee8fc;
+}
+
+.big-thing{
+    color: #1b94c1;
+}
+
+.header-child {
+    height: 9vh;
+    width: 13rem;
+    display: flex;
+    font-size: 0.8rem;
+}
+
+.books {
+    margin-right: 1rem;
+}
+
+.contact-us {
+    margin-left: 1rem;
+}
+
+nav {
+    margin-right: 1rem;
+    justify-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nbt-logo {
+    display: flex;
+    align-items: center;
+    justify-self: flex-start;
+}
+
+.nbt-title {
+    margin-left: .5rem;
+    margin-top: 0.5rem;
+}
+
+#logo {
+    height: 60px;
+    width: 60px;
+}
+
+body {
+    background-color: #4065d0;
+    min-height: 100%;
+}
+
+main {
+    height: calc(100vh - 9vh);
+}
+
+.wrapper {
+    display: flex;
+    padding-top: 10vh;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.writers{
+    display: flex;
+    flex-direction: column;
+}
+
+.writers h1 {
+    text-align: center;
+}
+
+.artists h1 {
+    text-align: center;
+}
+
+.writer > * {
+    margin-top: 1rem;
+}
+
+.writer{
+    margin-right: 2rem;
+
+    display: flex;
+    align-items: center;
+    height: 9rem;
+}
+
+.artist {
+    margin-right: 2rem;
+
+    display: flex;
+    align-items: center;
+    height: 9rem;
+    
+}
+
+.writer-name{
+    margin-left: 1rem;
+}
+
+.profile-pict{
+    width: 90px;
+    height: 110px;
+}
+
+.artists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.me {
+    color: rgba(0, 0, 0, .5);
+    height: 60vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+@media (max-width: 650px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .artists {
+        margin-top: 2rem;
+        
+    }
+
+    .me {
+        height: 5vh;
+        padding-bottom: 2rem;
+        width: 100vw;
+        text-align: end;
+        padding-right: 5vw;
+    }
+
+    .artist {
+        margin-right: 4.5rem;
+    }
+}
